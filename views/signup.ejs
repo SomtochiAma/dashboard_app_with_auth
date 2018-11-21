@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <% include partials/head %>
+    </head>
+    <body>
+        <div class="form-box">
+            <h3>Sign Up</h3>
+            <form action="/user/signup" method="POST" class="user-form" >
+                <input type="text" name="email" placeholder="Email"><br>
+                <input type="password" name="password" placeholder="Password"><br>
+                <div class="input-box">
+                    <input type="submit" value="Sign Up!" id="btn1">
+                </div>
+            </form>
+        </div>
+        <div class="form-box">
+            <h3>Login</h3>
+            <form action="/user/signin" method="POST" class="user-form" >
+                <input type="text" name="email" placeholder="Email"><br>
+                <input type="password" name="password" placeholder="Password"><br>
+                <div class="input-box">
+                    <input type="submit" value="Sign In!" id="btn2">
+                </div>
+            </form>
+            <form action="/user" method="GET">
+                <p>Enter token to view dashboard</p>
+                <input type="text" name="token">
+                <input type="submit" value="Go!">
+            </form>
+        </div>
+        <!-- <form action="/user/signin" method="POST" >
+            <input type="text" name="email" placeholder="Enter your Email">
+            <input type="password" name="password" placeholder="password">
+            <input type="submit" value="Sign In!">
+        </form> -->
+    </body>
+</html>
